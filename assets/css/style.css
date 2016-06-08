@@ -1,0 +1,14 @@
+body {
+  min-width: 550px; }
+
+#result table {
+  border: 1px solid #ddd; }
+  #result table thead {
+    background-color: #efefee; }
+  #result table tr {
+    text-transform: capitalize; }
+    #result table tr:hover {
+      background-color: #efefee; }
+  #result table td {
+    vertical-align: middle;
+    text-align: center; }
