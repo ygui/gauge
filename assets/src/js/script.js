@@ -87,7 +87,7 @@ appendHTML = {
 		}
 		document.getElementById('filter').innerHTML = options;
 	}
-}
+};
 
 // GROUPS OBJECT
 groups = {
@@ -136,7 +136,7 @@ groups = {
 			var qnt = [], prev;
 			var arrayLength = array.length;
 			for ( var i = 0; i < arrayLength; i++ ) {
-				if( id == array[i][filter] || id == 0){
+				if( id == array[i][filter] || id === 0){
 					if ( array[i].user !== prev ) {
 						qnt.push([array[i].user, 1]);
 					} else {

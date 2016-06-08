@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 		sass = require('gulp-ruby-sass'),
 		concat = require('gulp-concat'),
 		gls = require('gulp-live-server'),
-		jshint = require('gulp-jshint');
+		jshint = require('gulp-jshint'),
+		stylish = require('jshint-stylish');
 
 gulp.task('default', ['sass', 'scripts', 'watch', 'serve']);
 
@@ -37,5 +38,5 @@ gulp.task('watch', function(){
 gulp.task('lint', function() {
   return gulp.src('assets/src/js/**/*.js')
     .pipe(jshint())
-    .pipe(jshint.reporter('stylish'));
+    .pipe(jshint.reporter(stylish));
 });
